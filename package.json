@@ -1,11 +1,12 @@
 {
   "name": "aita",
   "version": "1.0.0",
-  "description": "an online ai powered tech assistant",
+  "description": "An online AI-powered tech assistant",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "webpack --mode production" // Replace with your actual build command
   },
   "author": "R. Henry Warren",
   "license": "ISC",
@@ -13,7 +14,8 @@
     "@google/generative-ai": "^0.17.1",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "webpack": "^5.84.0" // Add webpack as a dependency
   },
   "keywords": []
 }
