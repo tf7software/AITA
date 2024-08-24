@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "webpack --mode production" // Replace with your actual build command
+    "build": "node server.js" // Replace with your actual build command
   },
   "author": "R. Henry Warren",
   "license": "ISC",
