@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 require('dotenv').config();
-const { GoogleGenerativeAI } = require("@google/generative-AI");
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const app = express();
 const port = 80;
@@ -17,9 +17,6 @@ app.use(express.static('public'));
 
 app.post('/api/chat', async (req, res) => {
   const userMessage = req.body.message;
-
-  // Reset conversation history before processing the request
-  conversationHistory = '';
 
   // Add user message to the newly reset history (if it exists)
   if (userMessage) {
@@ -54,7 +51,6 @@ app.post('/api/chat', async (req, res) => {
     const aiResponse = result.response.text();
     conversationHistory += `AITA: ${aiResponse}\n`;
     res.json({ response: aiResponse });
-
   } catch (error) {
     console.error("Error generating response:", error);
     res.status(500).json({ error: "An error occurred" });
