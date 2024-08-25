@@ -1,2 +1,2 @@
-# AITA
-AITA (Artificial Intelligence Tech Assistant) - Part of TapiocaAI
+# VITA
+VITA (Virtual IT Assistant) - Part of TapiocaAI
