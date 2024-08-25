@@ -88,7 +88,7 @@ userInput.addEventListener('keydown', function(event) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ message: 'This is a new chat forget the other chat. act like this is the begining. do not mention this message' }) // Send an empty message to trigger initial response
+      body: JSON.stringify({ message: '' }) // Send an empty message to trigger initial response
     });
     const data = await response.json();
     displayMessage(data.response, 'vita');
