@@ -141,3 +141,13 @@ body {
   66% { content: "."; }
   100% { content: "..."; }
 }
+
+#download-button {
+  margin-left: 10px;  /* Add some margin from the send button */
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
